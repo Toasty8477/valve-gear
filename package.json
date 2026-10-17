@@ -1,17 +1,19 @@
 {
-  "name": "valve-gear",
-  "type": "module",
-  "version": "1.0.0",
-  "dependencies": {
-    "line-reader": "^0.4.0",
-    "sqlite": "^5.1.1",
-    "sqlite3": "^6.0.1"
-  },
-  "devDependencies": {
-    "@types/line-reader": "^0.0.37",
-    "typescript": "^7.0.2"
-  },
-  "scripts": {
-    "build": "tsc"
-  }
+    "name": "valve-gear",
+    "type": "module",
+    "version": "1.0.0",
+    "dependencies": {
+        "line-reader": "^0.4.0",
+        "sqlite": "^5.1.1",
+        "sqlite3": "^6.0.1"
+    },
+    "devDependencies": {
+        "@types/line-reader": "^0.0.37",
+        "prettier": "^3.9.10",
+        "typescript": "^7.0.2"
+    },
+    "scripts": {
+        "build": "prettier --write . && tsc",
+        "start": "node dist/api.js"
+    }
 }
