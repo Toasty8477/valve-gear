@@ -3,7 +3,9 @@
   "type": "module",
   "version": "1.0.0",
   "dependencies": {
-    "line-reader": "^0.4.0"
+    "line-reader": "^0.4.0",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^6.0.1"
   },
   "devDependencies": {
     "@types/line-reader": "^0.0.37",
