@@ -4,16 +4,22 @@
     "version": "1.0.0",
     "dependencies": {
         "line-reader": "^0.4.0",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
         "sqlite": "^5.1.1",
         "sqlite3": "^6.0.1"
     },
     "devDependencies": {
         "@types/line-reader": "^0.0.37",
+        "@types/react": "^18.3.5",
+        "@types/react-dom": "^18.3.0",
+        "@vitejs/plugin-react": "^4.3.1",
         "prettier": "^3.9.10",
-        "typescript": "^7.0.2"
+        "typescript": "^7.0.2",
+        "vite": "^8.3.4"
     },
     "scripts": {
-        "build": "prettier --write . && tsc",
-        "start": "node dist/api.js"
+        "build": "prettier --write . && tsc -b && vite build ",
+        "dev": "vite"
     }
 }
