@@ -14,7 +14,7 @@ const readData = (file: string) => {
         line.includes(",,--,FALSE,,,,—,,,,,,,") // Ignore empty lines
       )
     ) {
-      var parsedLine = line.split(",", 2);
+      const parsedLine = line.split(",", 2);
       console.log(parsedLine);
     }
 
